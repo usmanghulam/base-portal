@@ -10,10 +10,10 @@ This is the repository responsible for Base Portal implementation.
 
 ## Table of Contents
 
-- Installation
-- Getting Started
-- Linting & Prettifying
-- Technologies
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Linting & Prettifying](#linting--prettifying)
+- [Technologies](#technologies)
 ### Installation
 
 Install base-portal with npm:
