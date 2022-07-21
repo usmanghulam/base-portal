@@ -1,4 +1,4 @@
-import { EReduxActionTypes, IReduxBaseAction } from "./rootReducer";
+import { EReduxActionTypes, IReduxBaseAction } from "../reducer/rootReducer";
 
 export interface IReduxToggleMessageAction extends IReduxBaseAction {
   type: EReduxActionTypes.TOGGLE_MESSAGE;

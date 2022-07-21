@@ -1,19 +1,11 @@
 import * as React from "react";
 import { connect } from "react-redux";
-import { IReduxToggleMessageAction, toggleMessage } from "./actions";
+import { IReduxToggleMessageAction, toggleMessage } from "../action/actions";
 import { Dispatch, bindActionCreators } from "redux";
-import { AppState } from "./rootReducer";
-import styled from "styled-components";
-import Button from "@material-ui/core/Button";
+import { AppState } from "../reducer/rootReducer";
+import StyledMaterialButton from "../../styledComponents/button/button";
 
-const StyledMaterialButton  = styled(Button)`
-  background-color: ${props => props.theme.colors.secondary};
-  color: white;
-  &:hover {
-    background-color: grey;
-    color: #343e3d;
-  }
-`;
+
 
 const Toggle: React.FC<ToggleProps> = ({
   messageVisibility,
