@@ -1,5 +1,6 @@
 function App() {
-  return <div className='App'>react</div>
+  return <div>react.....
+  </div>
 }
 
 export default App
