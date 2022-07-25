@@ -1,4 +1,3 @@
-import React from 'react'
 import { AppSidebar, AppHeader } from '../components/index'
 
 const DefaultLayout = () => {
