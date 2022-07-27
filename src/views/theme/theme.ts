@@ -1,12 +1,13 @@
 import { createTheme } from '@mui/material/styles'
+import { BaseDesign } from './BaseDesign/BaseDesign'
 
 const Theme = createTheme({
   palette: {
     primary: {
-      main: '#0000FF',
+      main: BaseDesign.colors.primaryColor,
     },
     secondary: {
-      main: '#326eb3',
+      main: BaseDesign.colors.secondaryColor,
     },
   },
 })
