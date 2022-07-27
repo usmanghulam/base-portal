@@ -1,4 +1,4 @@
-import { ILink } from "../../strict-typing";
+import { ILink } from '../../strict-typing'
 
 /**
  * Links

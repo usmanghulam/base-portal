@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Suspense fallback={<Loading />}>
         <Routes>
-          <Route path="*" element={<DefaultLayout />} />
+          <Route path='*' element={<DefaultLayout />} />
           <Route path='/login' element={<Login />} />
         </Routes>
       </Suspense>

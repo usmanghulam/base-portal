@@ -1,4 +1,4 @@
-import { LinkType } from '../index';
+import { LinkType } from '../index'
 
 export interface ILink {
   rel: string

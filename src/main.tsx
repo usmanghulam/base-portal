@@ -3,7 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import addLinksToHead from './config/links/Links'
-import Theme from "./views/theme";
+import Theme from './views/theme'
 
 /**
  * dynamically add fonts and stylesheets to head tag

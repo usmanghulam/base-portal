@@ -1,5 +1,5 @@
 import React from 'react'
-import { IRoutes } from "../strict-typing";
+import { IRoutes } from '../strict-typing'
 
 /**
  * Pages | Components definition for Lazy Loading
@@ -7,7 +7,7 @@ import { IRoutes } from "../strict-typing";
 
 const Homepage = React.lazy(() =>
   import('../views/pages/index').then(({ Home }) => {
-    return ({ default: Home });
+    return { default: Home }
   }),
 )
 
@@ -15,8 +15,6 @@ const Homepage = React.lazy(() =>
  * Routes registered against the Pages | Components
  */
 
-const Routes: IRoutes[] = [
-  { path: '/', exact: true, name: 'Homepage', element: Homepage },
-]
+const Routes: IRoutes[] = [{ path: '/', exact: true, name: 'Homepage', element: Homepage }]
 
 export default Routes
