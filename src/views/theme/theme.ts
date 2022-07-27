@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles'
-import { BaseDesign } from "./BaseDesign/BaseDesign";
+import { BaseDesign } from './BaseDesign/BaseDesign'
 
 const Theme = createTheme({
   palette: {
