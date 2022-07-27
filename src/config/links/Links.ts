@@ -1,4 +1,4 @@
-import { Link } from './links.interface'
+import { ILink } from "../../strict-typing";
 
 /**
  * Links
@@ -6,7 +6,7 @@ import { Link } from './links.interface'
  * Contains stylesheets, fonts and icons
  */
 
-export const Links: Link[] = [
+export const Links: ILink[] = [
   {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap',
