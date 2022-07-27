@@ -21,7 +21,7 @@ const Login = React.lazy(() =>
 function App() {
   return (
     <Router>
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={<Loading />}>
         <Routes>
           <Route path='/' element={<DefaultLayout />} />
           <Route path='/login' element={<Login />} />
