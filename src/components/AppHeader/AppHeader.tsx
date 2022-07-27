@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const AppHeader = () => {
-    return <div>
-        App Header
-    </div>
+  return <div>App Header</div>
 }
 
 export default React.memo(AppHeader)

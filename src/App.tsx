@@ -1,22 +1,34 @@
-import styled from 'styled-components';
+import './styles/style.scss'
+import React, { Suspense } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Loading } from './views/base'
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
+/**
+ * Containers
+ */
 
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
+const DefaultLayout = React.lazy(() =>
+  import('./layout/DefaultLayout').then((module) => ({ default: module.default })),
+)
+
+/**
+ * Pages
+ */
+const Login = React.lazy(() =>
+  import('./views/pages/index').then((module) => ({ default: module.Login })),
+)
 
 function App() {
-  return <Wrapper>
-  <Title>
-    Hello World!
-  </Title>
-</Wrapper>
+  return (
+    <Router>
+      <Suspense fallback={<Loading/>}>
+        <Routes>
+          <Route path='/' element={<DefaultLayout />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </Suspense>
+    </Router>
+  )
 }
 
 export default App

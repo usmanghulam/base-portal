@@ -1,12 +1,22 @@
+import { StyledEngineProvider, ThemeProvider } from '@mui/material'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ThemeProvider } from 'styled-components';
 import App from './App'
-import './index.css'
-import Theme from './views/theme/theme';
+import Theme from './views/theme/Theme'
+import addLinksToHead from './config/links/Links'
 
+/**
+ * dynamically add fonts and stylesheets to head tag
+ */
+addLinksToHead()
+
+/**
+ * Theme configured for Material-UI with styled components
+ */
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <ThemeProvider theme={Theme}>
-    <App />
-  </ThemeProvider>
-);
+  <StyledEngineProvider injectFirst>
+    <ThemeProvider theme={Theme}>
+      <App />
+    </ThemeProvider>
+  </StyledEngineProvider>,
+)

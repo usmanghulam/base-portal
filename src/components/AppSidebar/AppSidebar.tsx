@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const AppSidebar = () => {
-    return <div>
-        App Sidebar
-    </div>
+  return <div>App Sidebar</div>
 }
 
 export default React.memo(AppSidebar)

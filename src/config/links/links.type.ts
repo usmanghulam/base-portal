@@ -1,1 +1,1 @@
-export type LinkType  = 'stylesheet' | 'font' | 'icons';
+export type LinkType = 'stylesheet' | 'font' | 'icons'
