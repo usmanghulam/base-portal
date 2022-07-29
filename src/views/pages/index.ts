@@ -2,5 +2,7 @@
  * All exports are mentioned here
  */
 
-export { Login } from './Login/Login'
+import { Login } from './login/Login'
+
+export { Login }
 export { Home } from './Home/Home'
