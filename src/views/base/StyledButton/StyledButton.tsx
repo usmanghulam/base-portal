@@ -15,5 +15,5 @@ interface Props{
 }
 
 export const StyledButton: React.FC<Props> = ({content}) => {
-  return <CustomButton variant='contained' fullWidth>{content}</CustomButton>
+  return <CustomButton variant='contained' fullWidth sx={{ py: 1 , mt: 5}}>{content}</CustomButton>
 }

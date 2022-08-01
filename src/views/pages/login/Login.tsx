@@ -1,6 +1,8 @@
 import { Button, Checkbox, createTheme, FormControlLabel, Grid, Paper, TextField, Typography } from '@mui/material'
 import { Container, StyledButton, Wrapper } from '../../base'
+import { BgImage } from '../../base/LoginPage/BgImage/BgImage'
 import { Popup } from '../../base/LoginPage/Popup/Popup'
+import { StyledCheckbox } from '../../base/LoginPage/StyledCheckbox/StyledCheckbox'
 import { StyledForm } from '../../base/LoginPage/StyledForm/StyledForm'
 
 /**
@@ -13,6 +15,7 @@ export const Login = () => {
       {/* background styled component */}
       <Wrapper />
       <Container>
+        <BgImage />
         {/* Login popup */}
         <Popup>
           {/* Add logo */}
@@ -34,21 +37,21 @@ export const Login = () => {
           </StyledForm>
           {/* Forget password */}
           <Grid>
-            <Typography align="right">Forget Password</Typography>
+            <Typography align="right" sx={{ pt: 2 }}>Forget Password?</Typography>
           </Grid>
-          <Grid sx={{ padding: '0px 20px', display: 'flex', width: '16rem', border: '1px solid #A3A5AB', backgroundColor: '#0E0F29', borderRadius: '8px' }}>
+          {/* Checkbox */}
+          <StyledCheckbox>
             <FormControlLabel
               control={
                 <Checkbox />
               }
               label="I’m not a robot"
             />
-            <img src="src/assets/images/logo/RecaptchaLogo.png" width="51px" height="51px" />
-          </Grid>
+            <img src="src/assets/images/loginImages/RecaptchaLogo.png" width="51px" height="51px" />
+          </StyledCheckbox>
           {/* Sign in button */}
           <Grid style={{
-            borderRadius: '8px',
-            marginTop: '1.5rem'
+            borderRadius: '8px'
           }} >
             <StyledButton content="Sign In" />
           </Grid>

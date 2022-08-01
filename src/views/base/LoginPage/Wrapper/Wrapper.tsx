@@ -1,14 +1,16 @@
 import Box from '@mui/material/Box'
+import { BaseDesign } from '../../../theme/BaseDesign/BaseDesign'
 
 /**
  * Login Wrapper style
  */
 
 export const Wrapper = () => {
+    const {colors} = BaseDesign;
     return (
         <Box sx={{
             position: 'fixed',
-            backgroundColor: '#07081E',
+            backgroundColor: `${colors.themeColor}`,
             width: '100%',
             height: '100%'
         }}>
