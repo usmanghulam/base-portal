@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { Navigate, Route, Routes as Router } from 'react-router-dom'
 import { Container } from '@mui/material'
 import { Loading } from '../../views/base'
-import Routes from '../../routes/Routes'
+import Routes from '../../routes/routes'
 
 const AppContent = () => {
   return (

@@ -44,6 +44,7 @@ export const BaseDesign = {
     completed: '#3ECE9E',
     rejected: '#fc8181',
     failed: '#ff0000',
+    themeColor:'#07081E'
   },
   fonts: {
     body: 'IBMPlexSans-Regular',
@@ -52,5 +53,6 @@ export const BaseDesign = {
     medium: 'IBMPlexSans-Medium',
     bold: 'IBMPlexSans-Bold',
     semiBold: 'IBMPlexSans-SemiBold',
+    fontTheme:'Montserrat'
   },
 }
