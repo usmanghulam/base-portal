@@ -1,4 +1,4 @@
-import {  AppContent } from '../components/index'
+import { AppContent } from '../components/index'
 
 const DefaultLayout = () => {
   return (

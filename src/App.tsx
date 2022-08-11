@@ -30,7 +30,6 @@ function App() {
           <Route path='*' element={<DefaultLayout />} />
           <Route path='/login' element={<Login />} />
           <Route path='/homepage' element={<HomePage />} />
-
         </Routes>
       </Suspense>
     </Router>

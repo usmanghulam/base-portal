@@ -10,15 +10,13 @@ const Theme = createTheme({
       main: BaseDesign.colors.secondaryColor,
     },
   },
-
 })
 
-Theme.typography.h3={
+Theme.typography.h3 = {
   fontSize: '1.2rem',
   fontWeight: '700',
   textAlign: 'center',
-  lineHeight:'27px'
-  }
+  lineHeight: '27px',
+}
 
 export default Theme
-
