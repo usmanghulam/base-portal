@@ -9,7 +9,7 @@ type Position = 'absolute' | 'fixed';
 export const BgImage: React.FC = () => {
     const opacity = '0.6';
     const position: Position = 'absolute';
-    const url = "src/assets/images/loginImages/";
+    const url = 'src/assets/images/loginImages/';
     const imagesObj = [{
         src: `${url}Vector.png`,
         alt: '',
@@ -60,8 +60,8 @@ export const BgImage: React.FC = () => {
     },]
     return (
         <>
-            {imagesObj.map((item, index) => {
-                return <img src={item.src} alt='' style={{ position: item.styles.position, width: item.styles.width, height: item.styles.height, top: item.styles.top, bottom: item.styles.bottom, left: item.styles.left, opacity: item.styles.opacity }} />
+            {imagesObj.map((item, i) => {
+                return <img key={i} src={item.src} alt='' style={{ position: item.styles.position, width: item.styles.width, height: item.styles.height, top: item.styles.top, bottom: item.styles.bottom, left: item.styles.left, opacity: item.styles.opacity }} />
 
             })}
 

@@ -10,9 +10,10 @@ export const Wrapper = () => {
     return (
         <Box sx={{
             position: 'fixed',
-            backgroundColor: `${colors.themeColor}`,
+            backgroundColor: `${colors.primaryColor}`,
             width: '100%',
-            height: '100%'
+            height: '100%',
+            color: 'rgba(255, 255, 255, 0.9)'
         }}>
         </Box>
     )

@@ -4,7 +4,7 @@
 
 export const BaseDesign = {
   colors: {
-    primaryColor: '#3ECE9E',
+    primaryColor: '#07081E',
     secondaryColor: '#13384A',
     lightBGColor: '#F7FFFC',
     darkBGColor: '#1d1446',
@@ -44,7 +44,7 @@ export const BaseDesign = {
     completed: '#3ECE9E',
     rejected: '#fc8181',
     failed: '#ff0000',
-    themeColor:'#07081E'
+    themeColor:'#3ECE9E'
   },
   fonts: {
     body: 'IBMPlexSans-Regular',

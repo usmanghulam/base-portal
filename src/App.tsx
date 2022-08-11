@@ -18,6 +18,10 @@ const Login = React.lazy(() =>
   import('./views/pages/index').then((module) => ({ default: module.Login })),
 )
 
+const HomePage = React.lazy(() =>
+  import('./views/pages/index').then((module) => ({ default: module.HomePage })),
+)
+
 function App() {
   return (
     <Router>
@@ -25,6 +29,8 @@ function App() {
         <Routes>
           <Route path='*' element={<DefaultLayout />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/homepage' element={<HomePage />} />
+
         </Routes>
       </Suspense>
     </Router>
