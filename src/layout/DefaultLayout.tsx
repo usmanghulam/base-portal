@@ -1,15 +1,15 @@
-import { AppSidebar, AppHeader, AppContent, AppFooter } from '../components/index'
+import { AppContent } from '../components/index'
 
 const DefaultLayout = () => {
   return (
     <div>
-      <AppSidebar />
+      {/* <AppNavbar /> */}
       <div className='wrapper d-flex flex-column min-vh-100 bg-light'>
-        <AppHeader />
+        {/* <AppHeader /> */}
         <div className='body flex-grow-1 px-3'>
           <AppContent />
         </div>
-        <AppFooter />
+        {/* <AppFooter /> */}
       </div>
     </div>
   )
